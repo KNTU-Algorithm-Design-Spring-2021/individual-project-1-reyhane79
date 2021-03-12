@@ -1,3 +1,4 @@
+package pkg3dclosest;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -13,7 +14,8 @@ public class Main {
       Vector<Point> v = new Vector<Point>();
       Scanner scanner = new Scanner(System.in);
       
-
+      // Read values and write into a vector.
+      System.out.println("How many points do you want to enter?:");
       int n = scanner.nextInt();
       Point tempPoint = new Point();
       for(int i = 0 ; i<n ; i++){
