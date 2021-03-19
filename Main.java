@@ -1,16 +1,16 @@
 import java.util.Scanner;
 public class Main {
-    //baraye negahdari zoje moratab (minimum, maximum)
+    //Pair (minimum, maximum) quantification
     static class Pair {
         int min;
         int max;
     }
-    //jostoju min o max be raveshe copare in pairs
+    //Search for min & max with copare in pairs
     static class MinMax {
         static Pair getMinMax(int arr[], int n) {
         Pair minmax = new Pair();
         int i;
-        //agar tedad azaye array fard bashad 2 ozv ebtedaee ra min o max dar nazar migirim
+        //if n odd 
         if (n % 2 == 0) {
             if (arr[0] > arr[1]) {
                 minmax.max = arr[0];
@@ -27,8 +27,7 @@ public class Main {
             minmax.max = arr[0];
             i = 1;
         }
- 
-        //moghayeseye aza ba min va max
+        //compar members with min & max
         while (i < n - 1) {
             if (arr[i] > arr[i + 1]) {
                 if (arr[i] > minmax.max) {
